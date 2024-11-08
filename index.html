@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+</head>
+<body>
+    <div class="product-card">
+        <!-- Product Image -->
+        <img src="download.jpeg" alt="Product Image" class="product-img">
+        
+        <!-- Product Details -->
+        <h2 class="product-name">S2 Smart Phone</h2>
+        <p class="product-price">Price: $49.99</p>
+        <p class="product-description">Discover seamless performance with this sleek smartphone, featuring a vivid HD display, powerful processor!</p>
+
+        <!-- Quantity Input -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" class="quantity-input" min="1" value="1" onchange="calculateTotalPrice()">
+        
+        <!-- Total Price Display -->
+        <p class="total-price">Total: $<span id="totalPrice">49.99</span></p>
+        
+        <!-- Buy Now Button -->
+        <button class="buy-now" onclick="buyNow()">Buy Now</button>
+    </div>
+</body>
+</html>
